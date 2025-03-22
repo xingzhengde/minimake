@@ -38,11 +38,11 @@ def test_valid_makefile(minimake_executable):
         text=True,
         cwd="tests/assets/sandbox/test_valid_makefile",
     )
-    # 比较cwd下Minimake_claered.mk和Minimake_claered_expected.mk文件内容是否一致
+    # 比较cwd下Minimake_cleared.mk和Minimake_cleared_expected.mk文件内容是否一致
     with open("tests/assets/sandbox/test_valid_makefile/Minimake_cleared.mk") as f:
         result_content = f.read()
     with open(
-        "tests/assets/sandbox/test_valid_makefile/Minimake_claered_expected.mk"
+        "tests/assets/sandbox/test_valid_makefile/Minimake_cleared_expected.mk"
     ) as f:
         expected_content = f.read()
     assert result_content == expected_content

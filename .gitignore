@@ -1,2 +1,9 @@
 *.pyc
 */__pycache__/*
+
+# build artifacts
+*.o
+mission1
+mission2
+mission3
+
